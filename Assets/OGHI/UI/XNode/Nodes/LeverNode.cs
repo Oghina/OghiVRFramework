@@ -5,8 +5,9 @@ using XNode;
 
 public class LeverNode : ProcessStepNode
 {
-    [Input] public List<int> entry;
+    [Input(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int entry;
     [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit;
+    [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit2;
 
     public Transform objectToRotate;
     public float rotationAngle;

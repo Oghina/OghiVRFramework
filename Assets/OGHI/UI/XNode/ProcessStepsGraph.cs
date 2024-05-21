@@ -6,5 +6,5 @@ using XNode;
 [CreateAssetMenu]
 public class ProcessStepsGraph : NodeGraph {
 
-	public List<ProcessStepNode> current;
+	public ProcessStepNode current;
 }
