@@ -1,23 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
-public class LeverNode : ProcessStepNode
+namespace OGHI.Editor
 {
-    [Input(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int entry;
-    [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit;
-    [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit2;
-
-    public Transform objectToRotate;
-    public float rotationAngle;
-    public RotationAxis rotationAxis;
-
-    public enum RotationAxis { x, y, z };
-
-    
-    public override object GetValue(NodePort port)
+    public class LeverNode : ProcessStepNode
     {
-        return this;
-    } 
+        [Input(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int entry;
+        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit;
+        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None, false)] public int exit2;
+
+        public Transform objectToRotate;
+        public float rotationAngle;
+        public RotationAxis rotationAxis;
+
+        public enum RotationAxis { x, y, z };
+
+        public override object GetValue(NodePort port)
+        {
+            return this;
+        }
+
+        public override void InitializeStep()
+        {
+            Debug.Log(GetName() + " initialized");
+        }
+
+        public override IEnumerator UpdateStep()
+        {
+            Debug.Log(GetName() + " updating");
+            yield return new WaitForSeconds(3f);
+            PortFieldName = "exit2";
+            Debug.Log(GetName() + " finished");
+        }
+    }
 }

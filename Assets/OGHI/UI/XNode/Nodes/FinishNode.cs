@@ -1,18 +1,28 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FinishNode : ProcessStepNode
+namespace OGHI.Editor
 {
-    [Input] public int entry;
-
-    public override string GetName()
+    public class FinishNode : ProcessStepNode
     {
-        return "Finish";
-    }
+        [Input] public int entry;
 
-    public void LogFinish()
-    {
-        Debug.Log("Finished: " + this.GetName());
+        public override string GetName()
+        {
+            return "Finish";
+        }
+
+        public override void InitializeStep()
+        {
+            Debug.Log(GetName() + " initialized");
+        }
+
+        public override IEnumerator UpdateStep()
+        {
+            Debug.Log(GetName() + " updating");
+            yield return new WaitForSeconds(3f);
+            PortFieldName = "exit2";
+            Debug.Log(GetName() + " finished");
+        }
     }
 }

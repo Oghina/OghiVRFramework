@@ -1,10 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using XNode;
 
-[CreateAssetMenu]
-public class ProcessStepsGraph : NodeGraph {
+namespace OGHI.Editor
+{
+    [CreateAssetMenu]
+    public class ProcessStepsGraph : NodeGraph
+    {
 
-	public ProcessStepNode current;
+        public ProcessStepNode current;
+    }
 }

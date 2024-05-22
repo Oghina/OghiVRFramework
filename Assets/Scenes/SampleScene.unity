@@ -123,68 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &139303247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
-  m_Name: Lever
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1547894548}
-  position: {x: -440, y: -24}
-  ports:
-    keys:
-    - entry
-    - exit2
-    - exit
-    values:
-    - _fieldName: entry
-      _node: {fileID: 139303247}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: exit
-        node: {fileID: 1128037645}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: 139303247}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 139303247}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: entry
-        node: {fileID: 1677230199}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  stepName: Step1
-  header: 
-  subHeader: 
-  entry: 0
-  exit: 0
-  exit2: 0
-  objectToRotate: {fileID: 0}
-  rotationAngle: 45
-  rotationAxis: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,68 +356,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!114 &468090312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
-  m_Name: Lever
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1547894548}
-  position: {x: 56, y: 376}
-  ports:
-    keys:
-    - entry
-    - exit2
-    - exit
-    values:
-    - _fieldName: entry
-      _node: {fileID: 468090312}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: exit
-        node: {fileID: 1677230199}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit2
-      _node: {fileID: 468090312}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: exit
-      _node: {fileID: 468090312}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: entry
-        node: {fileID: 1259808820}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  stepName: Step2
-  header: 
-  subHeader: 
-  entry: 0
-  exit: 0
-  exit2: 0
-  objectToRotate: {fileID: 0}
-  rotationAngle: 0
-  rotationAxis: 0
 --- !u!1 &573315795
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +516,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607788986}
   m_CullTransparentMesh: 1
+--- !u!114 &697334636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
+  m_Name: Lever
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1547894548}
+  position: {x: 152, y: -40}
+  ports:
+    keys:
+    - entry
+    - exit
+    - exit2
+    values:
+    - _fieldName: entry
+      _node: {fileID: 697334636}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: 1946185049}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 697334636}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 697334636}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  stepName: Step4
+  header: 
+  subHeader: 
+  entry: 0
+  exit: 0
+  exit2: 0
+  objectToRotate: {fileID: 0}
+  rotationAngle: 0
+  rotationAxis: 0
 --- !u!1 &808271390
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +704,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921058612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
+  m_Name: Lever
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1547894548}
+  position: {x: -152, y: -40}
+  ports:
+    keys:
+    - entry
+    - exit
+    - exit2
+    values:
+    - _fieldName: entry
+      _node: {fileID: 921058612}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit
+        node: {fileID: 1591817134}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 921058612}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 921058612}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  stepName: Step2
+  header: 
+  subHeader: 
+  entry: 0
+  exit: 0
+  exit2: 0
+  objectToRotate: {fileID: 0}
+  rotationAngle: 0
+  rotationAxis: 0
 --- !u!114 &1128037645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +787,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 139303247}
+        node: {fileID: 1591817134}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -865,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1547894548}
---- !u!114 &1259808820
+--- !u!114 &1412225550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -874,34 +868,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b79114a5c274d47b0d440cd9a76999, type: 3}
-  m_Name: Finish
+  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
+  m_Name: Lever
   m_EditorClassIdentifier: 
   graph: {fileID: 1547894548}
-  position: {x: 360, y: 184}
+  position: {x: 152, y: 248}
   ports:
     keys:
     - entry
+    - exit
+    - exit2
     values:
     - _fieldName: entry
-      _node: {fileID: 1259808820}
+      _node: {fileID: 1412225550}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: exit2
-        node: {fileID: 1677230199}
-        reroutePoints: []
-      - fieldName: exit
-        node: {fileID: 468090312}
+        node: {fileID: 1946185049}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  stepName: 
+    - _fieldName: exit
+      _node: {fileID: 1412225550}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 1412225550}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 1979116099}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  stepName: Step5
   header: 
   subHeader: 
   entry: 0
+  exit: 0
+  exit2: 0
+  objectToRotate: {fileID: 0}
+  rotationAngle: 0
+  rotationAxis: 0
 --- !u!114 &1547894548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,12 +935,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 1128037645}
-  - {fileID: 139303247}
-  - {fileID: 1677230199}
-  - {fileID: 468090312}
-  - {fileID: 1259808820}
+  - {fileID: 1591817134}
+  - {fileID: 1946185049}
+  - {fileID: 921058612}
+  - {fileID: 1412225550}
+  - {fileID: 697334636}
+  - {fileID: 1979116099}
   current: {fileID: 0}
---- !u!114 &1677230199
+--- !u!114 &1591817134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -934,50 +955,50 @@ MonoBehaviour:
   m_Name: Lever
   m_EditorClassIdentifier: 
   graph: {fileID: 1547894548}
-  position: {x: -152, y: 8}
+  position: {x: -440, y: -40}
   ports:
     keys:
     - entry
-    - exit2
     - exit
+    - exit2
     values:
     - _fieldName: entry
-      _node: {fileID: 1677230199}
+      _node: {fileID: 1591817134}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: exit
-        node: {fileID: 139303247}
+        node: {fileID: 1128037645}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit
-      _node: {fileID: 1677230199}
+      _node: {fileID: 1591817134}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 468090312}
+        node: {fileID: 921058612}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: exit2
-      _node: {fileID: 1677230199}
+      _node: {fileID: 1591817134}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: entry
-        node: {fileID: 1259808820}
+        node: {fileID: 1946185049}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  stepName: Step2
+  stepName: Step1
   header: 
   subHeader: 
   entry: 0
@@ -1157,6 +1178,105 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1946185049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f445929943739db41b7b58d36f43dc9e, type: 3}
+  m_Name: Lever
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1547894548}
+  position: {x: -152, y: 232}
+  ports:
+    keys:
+    - entry
+    - exit
+    - exit2
+    values:
+    - _fieldName: entry
+      _node: {fileID: 1946185049}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit2
+        node: {fileID: 1591817134}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 1946185049}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 697334636}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit2
+      _node: {fileID: 1946185049}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: entry
+        node: {fileID: 1412225550}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  stepName: Step3
+  header: 
+  subHeader: 
+  entry: 0
+  exit: 0
+  exit2: 0
+  objectToRotate: {fileID: 0}
+  rotationAngle: 0
+  rotationAxis: 0
+--- !u!114 &1979116099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b79114a5c274d47b0d440cd9a76999, type: 3}
+  m_Name: Finish
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1547894548}
+  position: {x: 472, y: 152}
+  ports:
+    keys:
+    - entry
+    values:
+    - _fieldName: entry
+      _node: {fileID: 1979116099}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: exit2
+        node: {fileID: 1412225550}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  stepName: Finish
+  header: 
+  subHeader: 
+  entry: 0
 --- !u!4 &2219811689543434235
 Transform:
   m_ObjectHideFlags: 0

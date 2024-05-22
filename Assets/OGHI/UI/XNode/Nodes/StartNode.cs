@@ -1,19 +1,34 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using XNode;
 
-public class StartNode : ProcessStepNode
+namespace OGHI.Editor
 {
-    [Output] public int exit;
-
-    public override string GetName()
+    public class StartNode : ProcessStepNode
     {
-        return "Start";
-    }
+        [Output] public int exit;
 
-    public override object GetValue(NodePort port)
-    {
-        return port.GetInputValue();
+        public override string GetName()
+        {
+            return "Start";
+        }
+
+        public override object GetValue(NodePort port)
+        {
+            return port.GetInputValue();
+        }
+
+        public override void InitializeStep()
+        {
+            Debug.Log(GetName() + " initialized");
+        }
+
+        public override IEnumerator UpdateStep()
+        {
+            Debug.Log(GetName() + " updating");
+            yield return new WaitForSeconds(3f);
+            PortFieldName = "exit";
+            Debug.Log(GetName() + " finished");
+        }
     }
 }
