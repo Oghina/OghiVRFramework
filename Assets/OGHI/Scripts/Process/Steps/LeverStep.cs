@@ -7,10 +7,10 @@ using UnityEngine;
 [SerializeField]
 public class LeverStep: IProcessStep
 {
-    public Transform objectToRotate;
-    public float angle;
+    public readonly Transform objectToRotate;
+    public readonly float angle;
 
-    private ProcessStepNode node;
+    private readonly ProcessStepNode node;
     public LeverStep (ProcessStepNode node)
     {
         this.node = node;

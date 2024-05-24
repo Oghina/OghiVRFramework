@@ -6,7 +6,7 @@ namespace OGHI.Process
 {
     public class StartStep : IProcessStep
     {
-        private ProcessStepNode node;
+        private readonly ProcessStepNode node;
         public StartStep(ProcessStepNode node)
         {
             this.node = node;

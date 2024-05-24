@@ -6,7 +6,7 @@ namespace OGHI.Process
 {
     public class FinalStep : IProcessStep
     {
-        private ProcessStepNode node;
+        private readonly ProcessStepNode node;
 
         public FinalStep(ProcessStepNode node)
         {
